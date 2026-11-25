@@ -1,16 +1,45 @@
-# shoes_store
+# Footwear Fusion Mobile
 
-A new Flutter project.
+Aplikasi mobile e-commerce toko sepatu berbasis **Flutter** dan **Dart** yang dikembangkan sebagai proyek pengembangan aplikasi perangkat bergerak di **Politeknik Negeri Jember**.
 
-## Getting Started
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-3.3%2B-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+![Provider](https://img.shields.io/badge/State-Provider-16A34A?style=for-the-badge)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Fitur Utama
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Autentikasi Pengguna**: Splash screen, login (`sign_in_page.dart`), dan registrasi akun (`sign_up_page.dart`) terhubung ke API via `AuthProvider` & `AuthService`.
+- **Katalog & Detail Produk**: Halaman beranda dengan kategori sepatu, carousel gambar produk, halaman detail produk (`product_page.dart`), dan daftar favorit (`wishlist_page.dart`).
+- **Keranjang & Checkout**: Pengelolaan keranjang belanja (`cart_page.dart`), halaman checkout (`checkout_page.dart`), konfirmasi transaksi berhasil (`checkout_success_page.dart`), daftar alamat pengiriman (`AddressListScreen.dart`), dan riwayat pembelian (`PurchaseHistoryPage.dart`).
+- **Chat & Profil**: Fitur chat dengan penjual (`chat_page.dart`, `detail_chat_page.dart`) serta pengelolaan profil pengguna (`profile_page.dart`, `edit_profile_page.dart`).
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Tech Stack & Package Utama
+
+| Komponen | Library / Tools |
+| :--- | :--- |
+| Framework & Bahasa | Flutter, Dart SDK `>=3.3.2 <4.0.0` |
+| State Management | `provider` |
+| Networking & Storage | `http`, `shared_preferences` |
+| UI & Media | `google_fonts`, `carousel_slider`, `cached_network_image`, `fluttertoast`, `cupertino_icons` |
+
+---
+
+## Cara Menjalankan
+
+```bash
+# 1. Clone repository
+git clone https://github.com/happiestvrgo/Footwear-Fusion_Mobile.git
+cd Footwear-Fusion_Mobile
+
+# 2. Instal dependensi Flutter
+flutter pub get
+
+# 3. Jalankan aplikasi di emulator atau perangkat
+flutter run
+```
+
+> Sesuaikan alamat base URL backend API pada `lib/config.dart` atau `config.json` sebelum menjalankan aplikasi.
